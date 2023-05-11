@@ -17,13 +17,13 @@ public class PlayerJellyStretch : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			stretch = true;
-		}
-		if (stretch)
+		if (Input.GetMouseButton(0))
 		{
 			Stretch();
+		}
+		else
+		{
+			Retract();
 		}
 	}
 
@@ -31,7 +31,16 @@ public class PlayerJellyStretch : MonoBehaviour
 	{
 		if (transform.localScale.x < stretchDistance)
 		{
-			transform.localScale += Vector3.right * stretchDistance * Time.deltaTime / stretchDuration;
+			transform.localScale += new Vector3(1 * stretchDistance * Time.deltaTime / stretchDuration, -1 * .777f * Time.deltaTime / stretchDuration, 0);
+			//transform.position += new Vector3(Mathf.Cos(Mathf.Deg2Rad * transform.rotation.z) * stretchDistance / 2 * Time.deltaTime / stretchDuration, Mathf.Sin(Mathf.Deg2Rad * transform.rotation.z) * stretchDistance / 2 * Time.deltaTime / stretchDuration, 0);
+		}
+	}
+
+	void Retract()
+	{
+		if (transform.localScale.x > 1)
+		{
+			transform.localScale += new Vector3(-1 * stretchDistance * Time.deltaTime / stretchDuration, 1 * .777f * Time.deltaTime / stretchDuration, 0);
 			//transform.position += new Vector3(Mathf.Cos(Mathf.Deg2Rad * transform.rotation.z) * stretchDistance / 2 * Time.deltaTime / stretchDuration, Mathf.Sin(Mathf.Deg2Rad * transform.rotation.z) * stretchDistance / 2 * Time.deltaTime / stretchDuration, 0);
 		}
 	}

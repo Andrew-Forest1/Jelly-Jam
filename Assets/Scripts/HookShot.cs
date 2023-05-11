@@ -11,11 +11,13 @@ public class HookShot : MonoBehaviour
 	Vector3 grapplePoint = Vector3.zero;
 	public bool grappling = false;
 	public float grappleSpeed = 5f;
+	LineRenderer line;
 
     // Start is called before the first frame update
     void Start()
     {
 		player = transform.parent;
+		line = GetComponent<LineRenderer>();
     }
 
     // Update is called once per frame
@@ -51,10 +53,14 @@ public class HookShot : MonoBehaviour
 		if(Vector3.Distance(player.position, grapplePoint) > .5f)
 		{
 			player.position = Vector3.MoveTowards(player.position, grapplePoint, grappleSpeed * Time.deltaTime);
+			line.SetPosition(0, transform.position);
+			line.SetPosition(1, grapplePoint);
 		}
 		else
 		{
 			grappling = false;
+			line.SetPosition(0, Vector3.zero);
+			line.SetPosition(1, Vector3.zero);
 		}
 	}
 
