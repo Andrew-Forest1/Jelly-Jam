@@ -7,11 +7,12 @@ public class PlayerJellyStretch : MonoBehaviour
 	public float stretchDistance = 5f;
 	public float stretchDuration = .5f;
 	bool stretch = false;
+	JellyController jelly;
 
 	// Start is called before the first frame update
 	void Start()
 	{
-
+		jelly = GetComponent<JellyController>();
 	}
 
 	// Update is called once per frame
@@ -20,6 +21,7 @@ public class PlayerJellyStretch : MonoBehaviour
 		if (Input.GetMouseButton(0))
 		{
 			Stretch();
+			jelly.canLook = false;
 		}
 		else
 		{
@@ -42,6 +44,10 @@ public class PlayerJellyStretch : MonoBehaviour
 		{
 			transform.localScale += new Vector3(-1 * stretchDistance * Time.deltaTime / stretchDuration, 1 * .777f * Time.deltaTime / stretchDuration, 0);
 			//transform.position += new Vector3(Mathf.Cos(Mathf.Deg2Rad * transform.rotation.z) * stretchDistance / 2 * Time.deltaTime / stretchDuration, Mathf.Sin(Mathf.Deg2Rad * transform.rotation.z) * stretchDistance / 2 * Time.deltaTime / stretchDuration, 0);
+		}
+		else
+		{
+			jelly.canLook = true;
 		}
 	}
 	//public Animator anime;
