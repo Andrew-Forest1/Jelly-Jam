@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HookShot : MonoBehaviour
+public class HookShot2D : MonoBehaviour
 {
 	public float distance = 5f;
 	public float cd = 1.5f;
@@ -14,17 +14,17 @@ public class HookShot : MonoBehaviour
 	LineRenderer line;
 	Rigidbody rb;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+	// Start is called before the first frame update
+	void Start()
+	{
 		player = transform.parent;
 		line = GetComponent<LineRenderer>();
 		rb = transform.parent.GetComponent<Rigidbody>();
-    }
+	}
 
-    // Update is called once per frame
-    void Update()
-    {
+	// Update is called once per frame
+	void Update()
+	{
 		if (Input.GetMouseButtonDown(1) && offCooldown)
 		{
 			StartHookShot();
@@ -34,7 +34,7 @@ public class HookShot : MonoBehaviour
 		{
 			ExecuteHookShot();
 		}
-    }
+	}
 
 	void StartHookShot()
 	{
@@ -42,8 +42,8 @@ public class HookShot : MonoBehaviour
 		StartCoroutine(CoolDown());
 
 		RaycastHit hit;
-		
-		if(Physics.Raycast(transform.position, transform.right, out hit, distance))
+
+		if (Physics.Raycast(new Vector2(transform.position.x, transform.position.y), new Vector2(transform.right.x, transform.right.y), out hit, distance))
 		{
 			grapplePoint = hit.point;
 			grappling = true;
@@ -54,7 +54,7 @@ public class HookShot : MonoBehaviour
 	{
 		Debug.Log(Vector3.Distance(player.position, grapplePoint));
 
-		if(Vector3.Distance(player.position, grapplePoint) > .5f)
+		if (Vector3.Distance(player.position, grapplePoint) > .5f)
 		{
 			player.position = Vector3.MoveTowards(player.position, grapplePoint, grappleSpeed * Time.deltaTime);
 			line.SetPosition(0, transform.position);
