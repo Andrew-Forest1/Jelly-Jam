@@ -27,6 +27,11 @@ public class DetectGround : MonoBehaviour
 	public bool GroundCheck()
 	{
 		//Debug.Log(Physics.BoxCast(transform + transform.up, boxSize, -1 * transform.up, transform.rotation, maxDistance, layerMask));
-		return Physics.BoxCast(transform.position + transform.up, boxSize, -1 * transform.up, transform.rotation, maxDistance, layerMask);
+		return Physics.BoxCast(transform.position + transform.up, boxSize, -1 * transform.up, transform.rotation, maxDistance, (1 << 7 | 1 << 8));
+	}
+
+	public void PlatformCheck()
+	{
+		Physics.BoxCast(transform.position + transform.up, boxSize, -1 * transform.up, transform.rotation, maxDistance, 1 << 8);
 	}
 }

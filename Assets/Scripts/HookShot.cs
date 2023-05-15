@@ -52,7 +52,7 @@ public class HookShot : MonoBehaviour
 
 	void ExecuteHookShot()
 	{
-		Debug.Log(Vector3.Distance(player.position, grapplePoint));
+		//Debug.Log(Vector3.Distance(player.position, grapplePoint));
 
 		if(Vector3.Distance(player.position, grapplePoint) > .5f)
 		{
