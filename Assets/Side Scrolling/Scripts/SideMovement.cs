@@ -59,7 +59,27 @@ public class SideMovement : MonoBehaviour
 			transform.position += Vector3.right * Time.fixedDeltaTime * 5;
 		}
 
+		if (Input.GetKey(KeyCode.S))
+		{
+			MoveThroughPlatform();
+		}
 
 
+
+	}
+
+	void MoveThroughPlatform()
+	{
+		if(groundDetection.PlatformCheck() != null)
+		{
+			StartCoroutine(PhaseThroughPlatforms());
+		}
+	}
+
+	IEnumerator PhaseThroughPlatforms()
+	{
+		Physics.IgnoreLayerCollision(6, 8, true);
+		yield return new WaitForSecondsRealtime(.15f);
+		Physics.IgnoreLayerCollision(6, 8, false);
 	}
 }

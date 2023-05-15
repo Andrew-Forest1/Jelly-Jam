@@ -30,8 +30,10 @@ public class DetectGround : MonoBehaviour
 		return Physics.BoxCast(transform.position + transform.up, boxSize, -1 * transform.up, transform.rotation, maxDistance, (1 << 7 | 1 << 8));
 	}
 
-	public void PlatformCheck()
+	public GameObject PlatformCheck()
 	{
-		Physics.BoxCast(transform.position + transform.up, boxSize, -1 * transform.up, transform.rotation, maxDistance, 1 << 8);
+		RaycastHit hit;
+		Physics.BoxCast(transform.position + transform.up, boxSize, -1 * transform.up, out hit, transform.rotation, maxDistance, 1 << 8);
+		return hit.transform.gameObject;
 	}
 }
