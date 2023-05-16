@@ -1,0 +1,915 @@
+fileFormatVersion: 2
+guid: ad3e0734a805fec4a9b6a4306770ed77
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jellyspritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 92.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8682629e8d28a49b7a02f386589c2d
+      internalID: -1103105031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 92.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7b171955f602642a26452bda8740b8
+      internalID: -1569668514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 92.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3dfb07ae08aa842879d0da55918b8a
+      internalID: 1066648769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 92.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ee43fe6b0ccba4296fde6ba3667cd4
+      internalID: -1856107691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 92.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcd717554981c94a8f23a3998d5d265
+      internalID: -1011140001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 92.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8638a453e3f21d4cacc2fb12f6911d2
+      internalID: -1681419934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 92.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0b7efa39aa45a4e8df4f85f9097261
+      internalID: -635581837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 92.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a5f9905404a2848b04f60bd1f16dab
+      internalID: 1998370481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 92.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2175f3a90f46a046b9f62e3f0942a3e
+      internalID: 775843057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 93
+        width: 33
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5066667, y: 0.46504498}
+      border: {x: 3, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866a1271c46069940a47d2017a31e30d
+      internalID: -963658973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 62.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0a17bcd195000448004009fe30baa5
+      internalID: 1422905616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 62.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f41a9d82d01ec4081da1fd7fc9710d
+      internalID: -1365228702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 62.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a250e2e10fdd244801fe218832683f
+      internalID: 57520368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 62.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239fd90f9d3dd964ab27675b776c3231
+      internalID: -579165858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 62.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d642039e7069a641a75114a0bbe608f
+      internalID: -1125525625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 62.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c4f7be363ae2d43b34fbef45daba72
+      internalID: 803061978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 62.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8e7a024054df64c9818b9f7caf0bba
+      internalID: 748030500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 62.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbedc86944a947a4bab74c9907b72704
+      internalID: 9017296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 62.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3cb11eedb6ab542ab0257597d6ea67
+      internalID: 224120968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 61
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25b08561207a2a4abf4bccc616b9503
+      internalID: 64247004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 32.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca07af0fd7e27414b8147fab2e2ef801
+      internalID: 2124393452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 32.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931af97fbd8fc5641a700b19e305dfc5
+      internalID: 1982165733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 32.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a89eae9a95c6647b30b6ad3cfc4e5d
+      internalID: 899939919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de3bf8b3dc999a4490c74ac41f7736c
+      internalID: 562051348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 32.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fb6339fd9a70c4fbfafd519f82a5bc
+      internalID: 372838518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 32.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01592dd78669a6247bc4a77244a710d9
+      internalID: 1226286311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 32.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ab876393a29ab498730f193cdce2a4
+      internalID: -697287411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 32.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1c09bdf4cb36445a83e34f03a9ad8f
+      internalID: 872886797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea85e646c7ea9fc489eb85841733f3bf
+      internalID: -1507921277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6439f79e5c79c49a80a48cd51cf437
+      internalID: 912474380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 2.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d73028bc35a1244acbc7bf00cfdacb
+      internalID: 1832766275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6618b4d8e50cd747bac941f9e433e77
+      internalID: -414715407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efacda0afd0f3b04d9c9e2a1923c8dee
+      internalID: 1984826545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc0f4081ca095c4cab0ee1c21ba431f
+      internalID: 1424370509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 2.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad77270c7e8f8d4e832a9a72a5d1239
+      internalID: 951610530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyspritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 2.25
+        width: 31.6
+        height: 30.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9409d2c0e74541c43a0255247b8a2ee8
+      internalID: 487450187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      jellyspritesheet_29: 912474380
+      jellyspritesheet_32: 1984826545
+      jellyspritesheet_22: 899939919
+      jellyspritesheet_24: 372838518
+      jellyspritesheet_16: 748030500
+      jellyspritesheet_3: -1856107691
+      jellyspritesheet_4: -1011140001
+      jellyspritesheet_10: 1422905616
+      jellyspritesheet_33: 1424370509
+      jellyspritesheet_28: -1507921277
+      jellyspritesheet_26: -697287411
+      jellyspritesheet_34: 951610530
+      jellyspritesheet_6: -635581837
+      jellyspritesheet_9: -963658973
+      jellyspritesheet_7: 1998370481
+      jellyspritesheet_30: 1832766275
+      jellyspritesheet_13: -579165858
+      jellyspritesheet_1: -1569668514
+      jellyspritesheet_15: 803061978
+      jellyspritesheet_14: -1125525625
+      jellyspritesheet_31: -414715407
+      jellyspritesheet_0: -1103105031
+      jellyspritesheet_11: -1365228702
+      jellyspritesheet_5: -1681419934
+      jellyspritesheet_18: 224120968
+      jellyspritesheet_19: 64247004
+      jellyspritesheet_25: 1226286311
+      jellyspritesheet_35: 487450187
+      jellyspritesheet_17: 9017296
+      jellyspritesheet_23: 562051348
+      jellyspritesheet_20: 2124393452
+      jellyspritesheet_12: 57520368
+      jellyspritesheet_27: 872886797
+      jellyspritesheet_8: 775843057
+      jellyspritesheet_21: 1982165733
+      jellyspritesheet_2: 1066648769
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
