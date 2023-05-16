@@ -11,6 +11,7 @@ public class NewMovement : MonoBehaviour
 	NewHookShot hookshot;
 	public float maxSpeed = 5f;
 	public float acceration = 3f;
+	Animator anime;
 
 	// Start is called before the first frame update
 	void Start()
@@ -19,6 +20,7 @@ public class NewMovement : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 		groundDetection = GetComponent<NewDetectGround>();
 		hookshot = GetComponent<NewHookShot>();
+		anime = GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
@@ -42,17 +44,14 @@ public class NewMovement : MonoBehaviour
 
 	void MoveControls()
 	{
-		//if (Input.GetKey(KeyCode.W))
-		//{
-		//	transform.position += Vector3.right * Time.fixedDeltaTime * 5;
-		//}
-		//else if (Input.GetKey(KeyCode.S))
-		//{
-		//	transform.position += Vector3.left * Time.fixedDeltaTime * 5;
-		//}
+		if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+		{
+			anime.SetInteger("Movement", 0);
+		}
 
 		if (Input.GetKey(KeyCode.A))
 		{
+			anime.SetInteger("Movement", -1);
 			if (rb.velocity.x > -1 * maxSpeed || hookshot.grappling)
 			{
 				rb.AddForce(-1 * transform.right * acceration, ForceMode2D.Impulse);
@@ -65,6 +64,7 @@ public class NewMovement : MonoBehaviour
 		}
 		else if (Input.GetKey(KeyCode.D))
 		{
+			anime.SetInteger("Movement", 1);
 			if (rb.velocity.x < maxSpeed || hookshot.grappling)
 			{
 				rb.AddForce(transform.right * acceration, ForceMode2D.Impulse);
