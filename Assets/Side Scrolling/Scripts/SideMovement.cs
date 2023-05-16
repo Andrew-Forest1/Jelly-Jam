@@ -8,6 +8,8 @@ public class SideMovement : MonoBehaviour
 	Rigidbody rb;
 	public float jumpForce = 10f;
 	DetectGround groundDetection;
+	public float maxSpeed = 5f;
+	public float dragComp = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,7 @@ public class SideMovement : MonoBehaviour
 		//{
 		//	LookControls();
 		//}
+		Debug.Log(rb.velocity);
 	}
 
 	private void Update()
@@ -52,11 +55,30 @@ public class SideMovement : MonoBehaviour
 
 		if (Input.GetKey(KeyCode.A))
 		{
-			transform.position += Vector3.left * Time.fixedDeltaTime * 5;
+			if(rb.velocity.x > -1 * maxSpeed)
+			{
+				rb.velocity += Vector3.left * maxSpeed * Time.fixedDeltaTime * dragComp;
+			}
+			//transform.position += Vector3.left * Time.fixedDeltaTime * 5;
 		}
 		else if (Input.GetKey(KeyCode.D))
 		{
-			transform.position += Vector3.right * Time.fixedDeltaTime * 5;
+			if (rb.velocity.x < maxSpeed)
+			{
+				rb.velocity += Vector3.right * maxSpeed * Time.fixedDeltaTime * dragComp;
+			}
+			//transform.position += Vector3.right * Time.fixedDeltaTime * 5;
+		}
+		else
+		{
+			if (rb.velocity.x < maxSpeed)
+			{
+				rb.velocity -= Vector3.left * maxSpeed * Time.fixedDeltaTime;
+			}
+			if (rb.velocity.x > -1 * maxSpeed)
+			{
+				rb.velocity -= Vector3.right * maxSpeed * Time.fixedDeltaTime;
+			}
 		}
 
 		if (Input.GetKey(KeyCode.S))
