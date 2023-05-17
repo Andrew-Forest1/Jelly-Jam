@@ -14,12 +14,14 @@ public class NewHookShot : MonoBehaviour
 	Rigidbody2D rb;
 	float length;
 	HingeJoint2D hinge = null;
+	public JellyController jelly;
 
 	// Start is called before the first frame update
 	void Start()
 	{
 		line = GetComponent<LineRenderer>();
 		rb = transform.GetComponent<Rigidbody2D>();
+		jelly = transform.GetComponent<JellyController>();
 	}
 
 	// Update is called once per frame
@@ -27,7 +29,10 @@ public class NewHookShot : MonoBehaviour
 	{
 		if (Input.GetMouseButtonDown(1) && offCooldown && !grappling)
 		{
-			StartHookShot();
+			if (jelly.CanHook())
+			{
+				StartHookShot();
+			}
 		}
 
 		if (grappling)
@@ -66,6 +71,7 @@ public class NewHookShot : MonoBehaviour
 			hinge.anchor = new Vector2(0, length);
 			hinge.connectedAnchor = Vector2.zero;
 			rb.freezeRotation = false;
+			jelly.ConsumeHookEnergy();
 		}
 	}
 

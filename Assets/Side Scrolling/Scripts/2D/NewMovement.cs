@@ -38,7 +38,10 @@ public class NewMovement : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.Space) && groundDetection.GroundCheck())
 		{
-			rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+			if (jelly.canJump())
+			{
+				rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+			}
 		}
 	}
 
