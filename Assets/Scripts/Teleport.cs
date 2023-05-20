@@ -19,12 +19,12 @@ public class Teleport : MonoBehaviour
         
     }
 
-	private void OnTriggerEnter(Collider other)
+	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (ready)
 		{
-			StartCoroutine(teleportToGameObject.transform.GetComponent<Teleport>().CoolDown());
-			other.transform.position = teleportToGameObject.transform.position;
+			//StartCoroutine(teleportToGameObject.transform.GetComponent<Teleport>().CoolDown());
+			collision.transform.position = teleportToGameObject.transform.position;
 		}
 	}
 
